@@ -26,9 +26,9 @@ public class Test {
 		Function<Integer, Boolean> goal = new Function<Integer, Boolean>() {
 			int count = 0;
 			@Override
-			public Boolean apply(Integer o) {
-				boolean done = o <= 1;
-				System.out.printf("%d%s", o, done ? ": " + count + " steps\n" : ", ");
+			public Boolean apply(Integer input) {
+				boolean done = input <= 1;
+				System.out.printf("%d%s", input, done ? ": " + count + " steps\n" : ", ");
 				count++;
 				return done;
 			}
