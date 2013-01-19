@@ -11,9 +11,9 @@ import java.util.Map;
 public class Impl {
 	
 	/**
-	 * This is a method that returns a list of all adjacent vertecies to the parameter vertecies
+	 * This is a method that returns a list of all adjacent vertices to the parameter vertecies
 	 * @param map
-	 * @return
+	 * @return List of adjacent vertices
 	 */
 	public static <T> Function<T, List<T>> adjacencyList(final Map<T, List<T>> map) {
 		return new Function<T, List<T>>() {
@@ -26,7 +26,7 @@ public class Impl {
 	}
 	/**
 	 * This function calculate the euclidean distance squared between two points.
-	 * @return
+	 * @return  The function to calculate Euclidean distance
 	 */
 	public static Function<Pair<Point, Point>, Integer> euclideanDistanceSquared() {
 		return new Function<Pair<Point,Point>, Integer>() {
